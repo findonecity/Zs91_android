@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.loginlib">
+
+    <application
+            android:allowBackup="true"
+            android:supportsRtl="true">
+        <activity android:name=".login.LoginActivity"/>
+        <activity android:name=".changepassword.ChangePasswordActivity"/>
+        <activity android:name=".register.RegisterActivity"/>
+    </application>
+</manifest>

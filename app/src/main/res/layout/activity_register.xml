@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/top_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="手机号:"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_12"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"/>
+
+                <com.example.baselib.base.widget.ClearEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="注册手机号即为登录用户名"
+                    android:background="@null"
+                    android:textSize="@dimen/text_small"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColor="@color/text_dark"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/e"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="密码:"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_12"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"/>
+
+                <com.example.baselib.base.widget.ClearEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="请输入6-8位密码"
+                        android:textSize="@dimen/text_small"
+                        android:inputType="textPassword"
+                        android:background="@null"
+                        android:maxLength="8"
+                        android:textColor="@color/text_dark"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/e"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="姓名:"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_12"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"/>
+
+                <com.example.baselib.base.widget.ClearEditText
+                        android:id="@+id/etContract"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="请输入你的姓名"
+                        android:textSize="@dimen/text_small"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:textColor="@color/text_dark"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/e"/>
+
+            <LinearLayout
+                    android:id="@+id/llBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="主营行业:"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_12"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"/>
+
+                <TextView
+                        android:id="@+id/tvBusiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="请选择主营行业"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_14"
+                        android:textColor="@color/blue1"/>
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/e"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="主营业务:"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_12"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"/>
+
+                <com.example.baselib.base.widget.ClearEditText
+                        android:id="@+id/etCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="请输入主营业务"
+                        android:textSize="@dimen/text_small"
+                        android:inputType="text"
+                        android:background="@null"
+                        android:textColor="@color/text_dark"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/e"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:text="注: 个体经营输入 个体经营(姓名)"/>
+
+            <Button
+                android:id="@+id/btnDredge"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_green4"
+                android:text="立即开通账号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
